@@ -1,0 +1,37 @@
+body{
+    background-image: url(./images/play-1738080_1280.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.game-container{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 1.1);
+    max-width: 40%;
+}
+
+
+@media (min-width: 400px) and (max-width: 909px) {
+
+    body{
+      background-size: cover;
+        }
+
+
+        .game-container{
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgb(0, 0, 0, 3.1);
+            max-width: 90%;
+        }
+}

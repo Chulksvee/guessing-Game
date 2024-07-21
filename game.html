@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ Testing Game</title>
+    <link rel="stylesheet" href="./game.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./images/WhatsApp Image 2024-07-20 at 23.00.34_e9f1e971.jpg" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="container game-container text-center">
+        <h1 class="mb-4" style="letter-spacing: 2px;" >Guessing Game</h1>
+        <p class="leade mb-4" style="font-weight: bold; letter-spacing: 2px;" >In just 5 attempts, guess any number between 1 and 20! to get a Matching result with the Computer &#129322</p>
+        <input type="text" id="guessName" class="form-control mb-3" placeholder="Enter your Name">
+        <input type="number" id="guessInput" class="form-control mb-3" placeholder="Enter your guess">
+        <button id="guessButton" class="btn btn-primary btn-block mb-3" >Guess</button>
+        <p id="resultMessage" class="lead" style="color: red; font-weight: bold; letter-spacing: 2px;"></p>
+        <button id="restartButton" class="btn btn-danger btn-block mt-3" style="display: none;" >Restart Game</button>
+    </div>
+
+
+  <script src="./game.js" ></script>  
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ Testing Game</title>
+    <link rel="stylesheet" href="./index2.css">
+    <link rel="shortcut icon" href="./images/WhatsApp Image 2024-07-20 at 23.00.34_e9f1e971.jpg" type="image/x-icon">
+</head>
+<body class="landingpage">
+
+
+    <div class="landingpage">
+    <!-- <div class="time" style="margin-top: 20px; font-size: 30px; margin-left: 42.5%;">
+
+        <div class="time">
+            <span id="hrs" >00</span>
+            <span>:</span> 
+            <span id="mins" >00</span>
+            <span>:</span>
+            <span id="sec" >00</span>
+        </div>
+    
+    
+    </div> -->
+
+<div class="mywebsite">
+    <h1 style="width: 50%; display: flex; justify-content: center; margin-left: 375px; font-size: 48px; letter-spacing: 2px;">Welcome to Andelin's IQ Game Trainer!</h1>
+    <div class="image">
+        <img class="img.img" style="width: 90px; border-radius: 50%; margin-left: 46%; margin-top: -29px;" src="./images/WhatsApp Image 2024-07-20 at 23.00.34_e9f1e971.jpg" alt="">
+    </div>
+    <p style="color: yellow; font-size: 20px; margin: auto; margin-top: 30px;"><span style=" font-weight: bold;"></span> Increase your IQ level by thinking like an AI &#129325</p>
+
+</div>
+
+<!-- here is my button -->
+
+<div class="button">
+    <a style="text-decoration: none; margin-left: -25px;" href="./game.html" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true"><span id="click" >Open Game</span></a>
+</div>
+
+    <!-- this is my rocket image -->
+
+    <div class="rocket">
+        <img class="rocket" src="./images/rocket-ship-png-11.png" alt="">
+     </div>
+
+</div>
+
+<!-- here is my css styling -->
+<style>
+ 
+</style>
+
+
+<script>    
+
+    //adding the current time to the date
+    var hrs = document.getElementById('hrs');
+    var mins = document.getElementById('mins');
+    var sec = document.getElementById('sec');
+    // var timeFormat = '24'; // Default to 24-hour format
+
+setInterval(() => {
+    
+    let currentTime = new Date();
+    // let currentTime = new Date;
+
+    hrs.innerHTML = (currentTime.getHours()<10?"0"+ currentTime.getHours() : currentTime.getHours())
+    mins.innerHTML = (currentTime.getMinutes()<10?"0"+ currentTime.getMinutes() : currentTime.getMinutes())
+    sec.innerHTML = (currentTime.getSeconds()<10?"0"+ currentTime.getSeconds() : currentTime.getSeconds())
+
+    // hrs.innerHTML = (currentTime.getHours() < 10 ? "0" + currentTime.getHours() : currentTime.getHours());
+    // mins.innerHTML = (currentTime.getMinutes() < 10 ? "0" + currentTime.getMinutes() : currentTime.getMinutes());
+    // sec.innerHTML = (currentTime.getSeconds() < 10 ? "0" + currentTime.getSeconds() : currentTime.getSeconds());
+}, 1000);
+
+</script>
+</body>
+</html>
